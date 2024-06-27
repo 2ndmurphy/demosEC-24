@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Club | 2024</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body class="bg-gradient-to-r from-[#FF99A2] via-[#35088A] to-[#E406B5]">
-    <main class="p-4 w-full h-screen">
+  <body>
+    <main class="w-full h-screen">
       <div
-        class="flex flex-col justify-center items-center w-full h-full text-center text-white"
+        class="flex flex-col justify-center items-center w-full h-full text-center text-white p-4 bg-gradient-to-r from-[#FF99A2] via-[#35088A] to-[#E406B5]"
       >
         <h1 class="text-2xl font-mono font-bold">WELCOME, STRANGERS!</h1>
         <h1 class="text-3xl font-bold font-mono">ENGLISH CLUB IS HERE</h1>
-        <div class="p-2 mt-2">
+        <div class="mt-2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
             consequatur officia adipisci, molestiae eligendi vel.
           </p>
         </div>
-        <div class="p-2">
-          <button type="button" class="px-4 py-2 rounded-full bg-sky-400">
+        <div class="mt-4">
+          <button type="button" class="px-6 py-2 rounded-full bg-sky-400">
             Explore!
           </button>
         </div>
       </div>
 
-      <div class="flex flex-col gap-8 justify-center items-center w-full h-fit">
+      <div
+        class="flex flex-col gap-8 justify-center items-center w-full h-fit px-4 py-8"
+      >
         <div class="text-slate-400 text-lg">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
@@ -41,6 +44,41 @@
           />
         </div>
       </div>
+
+      <footer class="flex flex-col gap-8 h-fit bg-slate-400 px-4 py-10">
+        <div class="text-white text-3xl font-bold font-mono text-center">
+          <h1>SO LET'S JOIN US!</h1>
+        </div>
+        <div class="flex justify-center items-center gap-4 p-3">
+          <div
+            class="w-10 h-10 p-2 rounded-full bg-white active:bg-rose-500 transition-all duration-100 ease-in-out 
+            flex justify-center items-center active:text-white active:scale-80"
+          >
+            <i class="ph ph-instagram-logo text-2xl"></i>
+          </div>
+          <div
+            class="w-10 h-10 p-2 rounded-full bg-white active:bg-sky-700 transition-all duration-100 ease-in-out 
+            flex justify-center items-center active:text-white active:scale-80"
+          >
+            <i class="ph ph-discord-logo text-2xl"></i>
+          </div>
+          <div
+            class="w-10 h-10 p-2 rounded-full bg-white active:bg-black transition-all duration-100 ease-in-out 
+            flex justify-center items-center active:text-white active:scale-80"
+          >
+            <i class="ph ph-tiktok-logo text-2xl"></i>
+          </div>
+          <div
+            class="w-10 h-10 p-2 rounded-full bg-white active:bg-teal-500 transition-all duration-100 ease-in-out 
+            flex justify-center items-center active:text-white active:scale-80"
+          >
+            <i class="ph ph-whatsapp-logo text-2xl"></i>
+          </div>
+        </div>
+        <div class="text-center text-sm font-bold">
+          <p>&copy; English Club 2024-2025, made with ❤</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
