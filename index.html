@@ -6,20 +6,26 @@
     <title>English Club | 2024</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'home-pattern': "url('./assets/bgImage/7he R4.gif')",
+              'about-pattern': "url('./assets/bgImage/gardenist.gif')",
+            },
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <main class="w-full h-screen">
       <div
-        class="flex flex-col justify-center items-center w-full h-full text-center text-white p-4 bg-gradient-to-r from-[#FF99A2] via-[#35088A] to-[#E406B5]"
+        class="relative flex flex-col justify-center items-center w-full h-full text-center text-white p-4 bg-home-pattern bg-center bg-fixed"
       >
-        <h1 class="text-2xl font-mono font-bold">WELCOME, STRANGERS!</h1>
-        <h1 class="text-3xl font-bold font-mono">ENGLISH CLUB IS HERE</h1>
-        <div class="mt-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-            consequatur officia adipisci, molestiae eligendi vel.
-          </p>
-        </div>
+        <h1 class="text-xl font-bold">HELLO THERE!</h1>
+        <h1 class="text-2xl font-bold">WE ARE ENGLISH CLUB</h1>
         <div class="mt-4">
           <button type="button" class="px-6 py-2 rounded-full bg-sky-400">
             Explore!
@@ -28,198 +34,54 @@
       </div>
 
       <div
-        class="flex flex-col gap-8 justify-center items-center w-full h-fit px-4 py-8"
+        class="flex flex-col gap-8 justify-center items-center w-full h-full px-4 py-8 bg-about-pattern bg-center bg-fixed"
       >
-        <div class="text-slate-400 text-lg">
+        <div class="text-slate-400 text-lg text-center text-white font-bold">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
             similique, eaque nulla facilis magni eius.
           </p>
         </div>
-        <div class="w-fit h-fit">
+        <!-- <div class="w-fit h-fit">
           <img
             src="https://dummyimage.com/600x400/000/fffff5"
             alt=""
             class="object-cover"
           />
-        </div>
+        </div> -->
       </div>
-      
-      <section class="">
-        <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-          <div class="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-            <div class="mx-auto max-w-lg text-left lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
-              <h2 class="text-3xl font-bold sm:text-4xl">What are we??</h2>
-              <p class="mt-4 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero aliquid sint distinctio
-                iure ipsum cupiditate? Quis, odit assumenda? Deleniti quasi inventore.
-              </p>
-            </div>
-      
-            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
-              <a
-                class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                href="#"
-              >
-                <span class="inline-block rounded-lg bg-gray-50 p-3">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                    <path
-                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    ></path>
-                  </svg>
-                </span>
-      
-                <h2 class="mt-2 font-bold">Learning</h2>
-      
-                <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
-              </a>
-      
-              <a
-                class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                href="#"
-              >
-                <span class="inline-block rounded-lg bg-gray-50 p-3">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                    <path
-                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    ></path>
-                  </svg>
-                </span>
-      
-                <h2 class="mt-2 font-bold">Challenge</h2>
-      
-                <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
-              </a>
-      
-              <a
-                class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                href="#"
-              >
-                <span class="inline-block rounded-lg bg-gray-50 p-3">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                    <path
-                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    ></path>
-                  </svg>
-                </span>
-      
-                <h2 class="mt-2 font-bold">Fun game</h2>
-      
-                <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
-              </a>
-      
-              <a
-                class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                href="#"
-              >
-                <span class="inline-block rounded-lg bg-gray-50 p-3">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                    <path
-                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                    ></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    ></path>
-                  </svg>
-                </span>
-      
-                <h2 class="mt-2 font-bold">Act out</h2>
-      
-                <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <footer class="flex flex-col gap-8 h-fit bg-slate-400 px-4 py-10">
-        <div class="text-white text-3xl font-bold font-mono text-center">
-          <h1>SO LET'S JOIN US!</h1>
+      <footer class="flex flex-col gap-8 h-fit bg-slate-400 px-4">
+        <div class="text-white text-3xl font-bold font-mono text-center pt-8">
+          <h1>LET'S JOIN US!</h1>
         </div>
         <div class="flex justify-center items-center gap-4 p-3">
           <div
             class="w-10 h-10 p-2 rounded-full bg-white active:bg-rose-500 transition-all duration-100 ease-in-out 
-            flex justify-center items-center active:text-white active:scale-80"
+            flex justify-center items-center active:text-white active:scale-100"
           >
             <i class="ph ph-instagram-logo text-2xl"></i>
           </div>
           <div
             class="w-10 h-10 p-2 rounded-full bg-white active:bg-sky-700 transition-all duration-100 ease-in-out 
-            flex justify-center items-center active:text-white active:scale-80"
+            flex justify-center items-center active:text-white active:scale-100"
           >
             <i class="ph ph-discord-logo text-2xl"></i>
           </div>
           <div
             class="w-10 h-10 p-2 rounded-full bg-white active:bg-black transition-all duration-100 ease-in-out 
-            flex justify-center items-center active:text-white active:scale-80"
+            flex justify-center items-center active:text-white active:scale-100"
           >
             <i class="ph ph-tiktok-logo text-2xl"></i>
           </div>
           <div
             class="w-10 h-10 p-2 rounded-full bg-white active:bg-teal-500 transition-all duration-100 ease-in-out 
-            flex justify-center items-center active:text-white active:scale-80"
+            flex justify-center items-center active:text-white active:scale-100"
           >
             <i class="ph ph-whatsapp-logo text-2xl"></i>
           </div>
         </div>
-        <div class="text-center text-sm font-bold">
+        <div class="text-center text-[10px] font-bold">
           <p>&copy; English Club 2024-2025, made with ❤</p>
         </div>
       </footer>
