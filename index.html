@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Club | 2024</title>
     <link rel="shortcut icon" href="/assets/stuff/logo-ec.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
@@ -12,44 +13,37 @@
         theme: {
           extend: {
             backgroundImage: {
-              'home-pattern': "url('./assets/bgImage/7he R4.gif')",
+              'home-pattern': "url('./assets/bgImage/contours-bg2.jpeg')",
               'about-pattern': "url('./assets/bgImage/gardenist.gif')",
               'footer-pattern': "url('./assets/bgImage/footer.gif')",
             },
-            keyframes: {
-              step: {
-                '0%': { transform: 'translateX(0)' },
-                '10%': { transform: 'translateX(60px)' },
-                '20%': { transform: 'translateX(120px)' },
-                '30%': { transform: 'translateX(180px)' },
-                '40%': { transform: 'translateX(240px)' },
-                '50%': { transform: 'translateX(320px)' },
-                '60%': { transform: 'translateX(380px)' },
-                '70%': { transform: 'translateX(440px)' },
-                '80%': { transform: 'translateX(500px)' },
-                '90%': { transform: 'translateX(560px)' },
-                '100%': { transform: 'translateX(612px)' },
-                '110%': { transform: 'translateX(618px)' },
+            colors: {
+              color: {
+                'primary': '#18206f',
               }
-            },
-            animation: {
-              step: 'step 4s steps(4) infinite',
-            },
+            }
           }
         }
       }
     </script>
   </head>
+  <style type="text/tailwindcss">
+     @layer utilities {
+            .bg-gradient-custom {
+                background-image: linear-gradient(45deg, #AF7AC5, #F8BBD0);
+            }
+        }
+  </style>
   <body>
     <main class="w-full h-screen">
       <div
-        class="relative flex flex-col justify-center items-center w-full h-full text-center text-white p-4 bg-home-pattern bg-center"
+        class="relative flex flex-col justify-center items-center w-full h-full text-center text-gray-800 p-4 bg-home-pattern bg-center"
       >
-        <h1 class="text-md font-bold">WE ARE</h1>
-        <h1 class="text-xl font-bold">TECHNICAL ONE OF</h1>
-        <h1 class="text-4xl font-bold">ENGLISH CLUB</h1>
+        <h1 class="text-3xl font-bold">WE ARE</h1>
+        <h1 class="text-3xl font-bold">TECHNICAL ONE OF</h1>
+        <h1 class="text-5xl font-bold">ENGLISH CLUB</h1>
         <div class="mt-4">
-          <a href="#about" class="px-4 py-2 rounded-full bg-sky-400">
+          <a href="#about" class="px-4 py-2 rounded-full bg-[#17255A] text-white">
             Explore!
           </a>
         </div>
@@ -57,48 +51,73 @@
 
       <section 
         id="about" 
-        class="flex flex-col gap-8 justify-center items-center w-full h-full px-4 py-8 bg-about-pattern bg-center">
-        <div class="text-slate-400 text-lg text-center text-white font-bold">
+        class="flex flex-col gap-8 justify-center items-center w-full h-fit px-4 py-8 bg-center">
+        <div class="text-slate-400 text-lg text-left text-gray-800 font-bold">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
             similique, eaque nulla facilis magni eius.
           </p>
+        </div>        
+        <div class="collection w-full flex justify-center items-center">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
+                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              </div>
+              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
+                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              </div>
+              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
+                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              </div>
+              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
+                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer class="relative w-full h-64 flex justify-around items-center bg-footer-pattern bg-center">
-        <div id="medsos" class="flex flex-col justify-center gap-4 p-2 items-center">
-          <div class="flex justify-center items-center gap-3">
-            <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
-              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <i class="ph ph-instagram-logo text-2xl"></i>
-              </a>
-            </div>
-            <h4>techone_ec</h4>
-          </div>
-          <div class="flex justify-center items-center gap-3">
-            <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
-              <a href="https://discord.gg/j2da4BqaFs">
-                <i class="ph ph-discord-logo text-2xl"></i>
-              </a>
-            </div>
-            <h4>techone_ec</h4>
-          </div>
-          <div class="flex justify-center items-center gap-3">
-            <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
-              <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc">
-                <i class="ph ph-tiktok-logo text-2xl"></i>
-              </a>
-            </div>
-            <h4>techone_ec</h4>
-          </div>
+      <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-gradient-custom">
+        <div class="px-5 py-4 text-white text-2xl font-bold w-full text-left overflow-hidden">
+          <h3>LET'S JOIN US!</h3>
         </div>
-        <div id="identity" class="flex justify-center items-center p-2 space-x-2">
-          <div class="w-40 h-40">
-            <img src="/assets/stuff/logo-ec.png" alt="" class="object-cover">
+        <div class="flex gap-4">
+          <div id="medsos" class="flex flex-col justify-center gap-4 p-2 items-center">
+            <div class="flex justify-center items-center gap-3">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+                <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  <i class="ph ph-instagram-logo text-2xl"></i>
+                </a>
+              </div>
+              <a href="" class="text-white font-bold">techone_ec</a>
+            </div>
+            <div class="flex justify-center items-center gap-3">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+                <a href="https://discord.gg/j2da4BqaFs">
+                  <i class="ph ph-discord-logo text-2xl"></i>
+                </a>
+              </div>
+              <a href="" class="text-white font-bold">techone_ec</a>
+            </div>
+            <div class="flex justify-center items-center gap-3">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+                <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc">
+                  <i class="ph ph-tiktok-logo text-2xl"></i>
+                </a>
+              </div>
+              <a href="" class="text-white font-bold">techone_ec</a>
+            </div>
+          </div>
+          <div id="identity" class="flex justify-center items-center p-2 space-x-2">
+            <div class="w-40 h-40">
+              <img src="/assets/stuff/logo-ec.png" alt="" class="object-cover">
+            </div>
           </div>
         </div>
       </footer>
     </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
   </body>
 </html>
