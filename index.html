@@ -32,12 +32,15 @@
             .bg-gradient-custom {
                 background-image: linear-gradient(45deg, #AF7AC5, #F8BBD0);
             }
+            .instagram {
+              background-image: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+            }
         }
   </style>
   <body>
     <main class="w-full h-screen">
       <div
-        class="relative flex flex-col justify-center items-center w-full h-full text-center text-gray-800 p-4 bg-home-pattern bg-center"
+        class="relative flex flex-col justify-center items-center w-full h-[80vh] text-center text-gray-800 p-4 bg-home-pattern bg-center"
       >
         <h1 class="text-3xl font-bold">WE ARE</h1>
         <h1 class="text-3xl font-bold">TECHNICAL ONE</h1>
@@ -51,27 +54,58 @@
 
       <section 
         id="about" 
-        class="flex flex-col gap-8 justify-center items-center w-full h-fit px-4 py-8 bg-center">
-        <div class="text-slate-400 text-lg text-left text-gray-800 font-bold">
+        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-5 bg-center">
+        <div class="text-3xl font-bold">
+          <h1>What are we?</h1>
+        </div>
+        <div class="text-slate-400 text-lg text-left text-gray-800 font-bold px-3">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            similique, eaque nulla facilis magni eius.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum 
+            omnis magnam odio animi quis quidem?
           </p>
-        </div>        
-        <div class="collection w-full flex justify-center items-center">
+        </div>
+        <div class="activities py-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              act out
+            </div>
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              discussion
+            </div>
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              learning
+            </div>
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              challanges
+            </div>
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              movie show
+            </div>
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
+              fun game
+            </div>
+          </div>
+        </div>
+        <div class="collection w-full flex justify-center items-center py-4">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
-                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img1.jpg" class="object-cover">
               </div>
-              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
-                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img2.jpg" class="object-cover">
               </div>
-              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
-                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img3.jpg" class="object-cover">
               </div>
-              <div class="content w-64 h-72 bg-teal-500 border-2 border-white rounded swiper-slide">
-                <img src="https://placehold.co/600x400" alt="" class="w-[256px] h-[288px] object-cover">
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img4.jpg" class="object-cover">
+              </div>
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img5.jpg" class="object-cover">
+              </div>
+              <div class="content w-64 swiper-slide">
+                <img src="./assets/activities/img6.jpg" class="object-cover">
               </div>
             </div>
           </div>
@@ -79,34 +113,34 @@
       </section>
 
       <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-gradient-custom">
-        <div class="px-5 py-4 text-white text-2xl font-bold w-full text-left overflow-hidden">
+        <div class="px-5 py-3 text-white text-2xl font-bold w-full text-left overflow-hidden">
           <h3>LET'S JOIN US!</h3>
         </div>
-        <div class="flex gap-4">
-          <div id="medsos" class="flex flex-col justify-center gap-4 p-2 items-center">
+        <div class="flex justify-between gap-4 w-full px-5">
+          <div id="medsos" class="flex flex-col justify-center gap-4 items-center">
             <div class="flex justify-center items-center gap-3">
-              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl instagram active:scale-90">
                 <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                  <i class="ph ph-instagram-logo text-2xl"></i>
+                  <i class="ph ph-instagram-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="" class="text-white font-bold">techone_ec</a>
+              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
             </div>
             <div class="flex justify-center items-center gap-3">
-              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90 bg-indigo-700">
                 <a href="https://discord.gg/j2da4BqaFs">
-                  <i class="ph ph-discord-logo text-2xl"></i>
+                  <i class="ph ph-discord-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="" class="text-white font-bold">techone_ec</a>
+              <a href="https://discord.gg/j2da4BqaFs" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
             </div>
             <div class="flex justify-center items-center gap-3">
-              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#000000] active:scale-90">
                 <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc">
-                  <i class="ph ph-tiktok-logo text-2xl"></i>
+                  <i class="ph ph-tiktok-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="" class="text-white font-bold">techone_ec</a>
+              <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
             </div>
           </div>
           <div id="identity" class="flex justify-center items-center p-2 space-x-2">

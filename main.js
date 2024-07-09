@@ -12,8 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     slideShadows: true,
   },
   autoplay:{
-
-    delay:3000,
+    delay:2500,
     disableOnInteraction:false,
   }
 });
