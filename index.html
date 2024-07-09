@@ -6,6 +6,9 @@
     <title>English Club | 2024</title>
     <link rel="shortcut icon" href="/assets/stuff/logo-ec.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
@@ -13,14 +16,17 @@
         theme: {
           extend: {
             backgroundImage: {
-              'home-pattern': "url('./assets/bgImage/contours-bg2.jpeg')",
-              'about-pattern': "url('./assets/bgImage/gardenist.gif')",
-              'footer-pattern': "url('./assets/bgImage/footer.gif')",
+              'home-pattern': "url('./assets/bgImage/layered-waves-haikei (1).png')",
+              'about-pattern': "url('./assets/bgImage')",
+              'footer-pattern': "url('./assets/bgImage/cool-background.png')",
             },
             colors: {
               color: {
                 'primary': '#18206f',
               }
+            },
+            fontFamily: {
+              'poppins': ['"Poppins"']
             }
           }
         }
@@ -40,13 +46,13 @@
   <body>
     <main class="w-full h-screen">
       <div
-        class="relative flex flex-col justify-center items-center w-full h-[80vh] text-center text-gray-800 p-4 bg-home-pattern bg-center"
+        class="relative flex flex-col justify-center items-center w-full h-[90vh] text-center text-white p-4 bg-home-pattern bg-no-repeat bg-center"
       >
-        <h1 class="text-3xl font-bold">WE ARE</h1>
-        <h1 class="text-3xl font-bold">TECHNICAL ONE</h1>
-        <h1 class="text-4xl font-bold">OF ENGLISH CLUB</h1>
+        <h1 class="text-3xl font-poppins font-bold">WE ARE</h1>
+        <h1 class="text-3xl font-poppins font-bold">TECHNICAL ONE</h1>
+        <h1 class="text-4xl font-poppins font-bold">OF ENGLISH CLUB</h1>
         <div class="mt-4">
-          <a href="#about" class="px-4 py-2 rounded-full bg-[#17255A] text-white">
+          <a href="#about" class="px-4 py-2 rounded-full bg-[#17255A] text-white font-poppins">
             Explore!
           </a>
         </div>
@@ -54,11 +60,11 @@
 
       <section 
         id="about" 
-        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-5 bg-center">
+        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-5 bg-about-pattern bg-no-repeat bg-center">
         <div class="text-3xl font-bold">
           <h1>What are we?</h1>
         </div>
-        <div class="text-slate-400 text-lg text-left text-gray-800 font-bold px-3">
+        <div class="text-slate-400 text-lg text-left text-gray-800 font-poppins font-bold px-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum 
             omnis magnam odio animi quis quidem?
@@ -90,30 +96,30 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img1.jpg" class="object-cover">
+                <img src="./assets/activities/img1.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img2.jpg" class="object-cover">
+                <img src="./assets/activities/img2.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img3.jpg" class="object-cover">
+                <img src="./assets/activities/img3.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img4.jpg" class="object-cover">
+                <img src="./assets/activities/img4.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img5.jpg" class="object-cover">
+                <img src="./assets/activities/img5.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
-                <img src="./assets/activities/img6.jpg" class="object-cover">
+                <img src="./assets/activities/img6.jpg" class="object-cover" loading="lazy">
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-gradient-custom">
-        <div class="px-5 py-3 text-white text-2xl font-bold w-full text-left overflow-hidden">
+      <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-footer-pattern bg-center bg-no-repeat">
+        <div class="px-5 py-3 text-white text-2xl font-poppins font-bold w-full text-left overflow-hidden">
           <h3>LET'S JOIN US!</h3>
         </div>
         <div class="flex justify-between gap-4 w-full px-5">
