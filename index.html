@@ -17,7 +17,6 @@
           extend: {
             backgroundImage: {
               'home-pattern': "url('./assets/bgImage/layered-waves-haikei (1).png')",
-              'about-pattern': "url('./assets/bgImage')",
               'footer-pattern': "url('./assets/bgImage/cool-background.png')",
               'btn-flag': "url('./assets/stuff/british flag.jpeg')"
             },
@@ -72,12 +71,19 @@
           }
           .transition {
             background: rgb(0,0,0);
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, var(--darker-blue) 50%);
             position: absolute;
-            bottom: 0;
             width: 100%;
             height: 3rem;
             z-index: 3;
+          }
+          .transition-b {
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(16, 109, 230, 1) 50%);
+            bottom: 0;
+          }
+          .transition-t {
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(16, 109, 230, 1) 50%);
+            top: -1px;
+            right: 0;
           }
           .bg-img-flag {
             font-size: clamp(1.8rem, 1.4716rem + 2.3881vw, 3rem);
@@ -88,11 +94,19 @@
             text-shadow: 4px 0 12px rgba(67, 191, 232, 0.5);
             letter-spacing: 1px;
           }
+          .bg-about {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1101%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1102%26quot%3b)'%3e%3c/rect%3e%3cpath d='M881.4280461352191 366.55154541325135L1051.0311109952293 421.8376767664706 1021.2767593057039 268.76480728953015z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M966.81 503.33 a112.15 112.15 0 1 0 224.3 0 a112.15 112.15 0 1 0 -224.3 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-105.20590132948686 63.56912344595561L3.8904524412200914 176.54170489954268 116.86303389480716 67.44535112883572 7.766680124100205-45.52723032475134z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1387.2746269768882 378.723928550247L1304.5136557067854 322.78611756285403 1296.9030992650476 409.77517574503355z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1067.54 1.18 a154.25 154.25 0 1 0 308.5 0 a154.25 154.25 0 1 0 -308.5 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M427.36505025841484 155.86794703893392L445.4358225599306 284.4481731332379 574.0160486542345 266.3774008317221 555.9452763527188 137.79717473741817z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M29.18 118.56 a108.43 108.43 0 1 0 216.86 0 a108.43 108.43 0 1 0 -216.86 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1101'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='139.29%25' x2='84.72%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1102'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(16%2c 109%2c 230%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1440' preserveAspectRatio='none' viewBox='0 0 1440 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1115%26quot%3b)' fill='none'%3e%3crect width='1440' height='1440' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1116%26quot%3b)'%3e%3c/rect%3e%3cpath d='M226.4373544748999 774.4582604697372L131.85549155918437 527.3604739154815-16.811837494471433 704.5352974165613z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M370.6683388265392 350.7660958055824L60.68578420463274 575.9816046781422 285.90129307719246 885.9641593000485 595.883847699099 660.7486504274889z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M609.806261913869 1499.4336110113659L749.8674803849495 1246.7564842280324 497.1903536016161 1106.6952657569518 357.12913513053553 1359.3723925402853z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M632.86 411.71 a441.74 441.74 0 1 0 883.48 0 a441.74 441.74 0 1 0 -883.48 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M800.1582879434477 1346.420015692164L1065.6585886439486 1427.5916035528076 1054.6658200846632 988.7553585717344z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M856.9591250520837 1558.893702861153L1082.174897065855 1299.812593928621 823.093788133323 1074.59682191485 597.8780161195517 1333.677930847382z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M357.47952416207886 652.6501707057957L469.64187305404516 422.68327589203966 239.6749782402891 310.52092700007336 127.5126293483228 540.4878218138294z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1115'%3e%3crect width='1440' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1116'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(16%2c 109%2c 230%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1440' preserveAspectRatio='none' viewBox='0 0 1440 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1149%26quot%3b)' fill='none'%3e%3crect width='1440' height='1440' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1150%26quot%3b)'%3e%3c/rect%3e%3cpath d='M1324.0270963538865 1225.175248448738L945.8081501304223 1079.9905976245564 800.6234993062405 1458.2095438480203 1178.8424455297045 1603.3941946722023z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1216.0570724579445 558.7832446413398L995.5669099903578 191.8259911864031 628.609656535421 412.3161536539899 849.0998190030077 779.2734071089266z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M480.15726037442084 720.2207319630849L661.5304972165611 573.3475807194234 514.6573459728996 391.97434387728305 333.28410913075936 538.8474951209446z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M510.2323632183415 1224.9815331995158L604.1096127349387 1417.4584185202932 845.8863159578063 1180.4041015850087z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-60.97533289959547 984.7016696127871L238.95079294877812 1016.5141983364213 135.93323788686817 773.820047522442z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M618.3212739881326 93.67999716116628L468.57020330451604 315.2393295652738 701.4485439223977 335.6135443500672z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M577.98 794.41 a339.11 339.11 0 1 0 678.22 0 a339.11 339.11 0 1 0 -678.22 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1149'%3e%3crect width='1440' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1150'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(16%2c 109%2c 230%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .border-cust {
+            border-radius: 0% 25% 25% 25% / 25% 25% 25% 25%;
+          }
         }
   </style>
   <body>
     <main class="w-full h-screen">
-      <div
+      <section
         class="relative flex flex-col justify-center items-center w-full h-[80vh] text-center text-white p-4"
       >
         <div class="block z-50">
@@ -108,16 +122,16 @@
           </button>
         </div>
         <div class="stripe-pattern"></div>
-        <div class="transition"></div>
-      </div>
+        <!-- <div class="transition transition-b"></div> -->
+      </section>
 
       <section 
         id="about" 
-        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-8 bg-[#012169]">
+        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-8 bg-about">
         <div class="text-3xl font-bold w-full text-left">
           <h1 class="text-white font-bold font-poppins">What are we?</h1>
         </div>
-        <div class="text-slate-400 text-lg text-left text-gray-800 font-poppins font-bold">
+        <div class="text-white text-lg text-left text-gray-800 font-poppins font-bold">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum 
             omnis magnam odio animi quis quidem?
@@ -147,8 +161,8 @@
         </div>
         <div class="collection w-full flex justify-center items-center py-4">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper shadow-xl">
-              <div class="content w-64 swiper-slide border-4 border-[#f5e2c8] rounded">
+            <div class="swiper-wrapper">
+              <div class="content w-64 swiper-slide rounded">
                 <img src="./assets/activities/img1.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
@@ -172,7 +186,8 @@
       </section>
 
       <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-footer-pattern bg-center bg-no-repeat">
-        <div class="px-5 py-3 text-white text-2xl font-poppins font-bold w-full text-left overflow-hidden">
+        <!-- <div class="transition transition-t"></div> -->
+        <div class="px-5 py-5 text-white text-2xl font-poppins font-bold w-full text-left overflow-hidden">
           <h3>LET'S JOIN US!</h3>
         </div>
         <div class="flex justify-between gap-4 w-full px-5">
