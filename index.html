@@ -19,6 +19,7 @@
               'home-pattern': "url('./assets/bgImage/layered-waves-haikei (1).png')",
               'about-pattern': "url('./assets/bgImage')",
               'footer-pattern': "url('./assets/bgImage/cool-background.png')",
+              'btn-flag': "url('./assets/stuff/british flag.jpeg')"
             },
             colors: {
               color: {
@@ -35,43 +36,95 @@
   </head>
   <style type="text/tailwindcss">
      @layer utilities {
-            .bg-gradient-custom {
-                background-image: linear-gradient(45deg, #AF7AC5, #F8BBD0);
+          .bg-gradient-custom {
+            background-image: linear-gradient(45deg, #AF7AC5, #F8BBD0);
+          }
+          .instagram {
+            background-image: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+          }
+          .stripe-pattern {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-size: 18px 18px;
+            background-image: linear-gradient(
+              -45deg,
+              #2D1522 25%,
+              #341928 25%,
+              #341928 50%,
+              #2D1522 50%,
+              #2D1522 75%,
+              #341928 75%,
+              #341928 100%
+            );
+            box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgb(0 0 0 / 40%);
+            z-index: 1;
+            animation: scroll-stripe 180s linear infinite;
+          }
+          @keyframes scroll-stripe {
+            0% {
+              background-position: 0% 0%;
             }
-            .instagram {
-              background-image: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+            100% {
+              background-position: 100% 0%;
             }
+          }
+          .transition {
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, var(--darker-blue) 50%);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 3rem;
+            z-index: 3;
+          }
+          .bg-img-flag {
+            font-size: clamp(1.8rem, 1.4716rem + 2.3881vw, 3rem);
+            background-image: url('./assets/stuff/british\ flag.jpeg');
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text;
+            color: transparent;
+            text-shadow: 4px 0 12px rgba(67, 191, 232, 0.5);
+            letter-spacing: 1px;
+          }
         }
   </style>
   <body>
     <main class="w-full h-screen">
       <div
-        class="relative flex flex-col justify-center items-center w-full h-[90vh] text-center text-white p-4 bg-home-pattern bg-no-repeat bg-center"
+        class="relative flex flex-col justify-center items-center w-full h-[80vh] text-center text-white p-4"
       >
-        <h1 class="text-3xl font-poppins font-bold">WE ARE</h1>
-        <h1 class="text-3xl font-poppins font-bold">TECHNICAL ONE</h1>
-        <h1 class="text-4xl font-poppins font-bold">OF ENGLISH CLUB</h1>
-        <div class="mt-4">
-          <a href="#about" class="px-4 py-2 rounded-full bg-[#17255A] text-white font-poppins">
-            Explore!
-          </a>
+        <div class="block z-50">
+          <h1 class="text-white text-xl font-bold font-poppins bg-img-flag">WELCOME TO!</h1>
+          <h1 class="text-white text-3xl font-bold font-poppins bg-img-flag">TECHNICAL ONE</h1>
+          <h1 class="text-white text-4xl font-bold font-poppins bg-img-flag">
+            OF ENGLISH CLUB
+          </h1>
         </div>
+        <div class="mt-4 z-50"> 
+          <button class="flex justify-center items-center px-5 py-3 bg-[#ffffff] rounded-3xl">
+           <a href="#about" class="font-bold font-poppins text-[#bd1e1e] text-center">Go Explore!</a>
+          </button>
+        </div>
+        <div class="stripe-pattern"></div>
+        <div class="transition"></div>
       </div>
 
       <section 
         id="about" 
-        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-5 bg-about-pattern bg-no-repeat bg-center">
-        <div class="text-3xl font-bold">
-          <h1>What are we?</h1>
+        class="flex flex-col gap-5 justify-center items-center w-full h-fit px-4 py-8 bg-[#012169]">
+        <div class="text-3xl font-bold w-full text-left">
+          <h1 class="text-white font-bold font-poppins">What are we?</h1>
         </div>
-        <div class="text-slate-400 text-lg text-left text-gray-800 font-poppins font-bold px-3">
+        <div class="text-slate-400 text-lg text-left text-gray-800 font-poppins font-bold">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum 
             omnis magnam odio animi quis quidem?
           </p>
         </div>
         <div class="activities py-4">
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-2 gap-5">
             <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
               act out
             </div>
@@ -94,8 +147,8 @@
         </div>
         <div class="collection w-full flex justify-center items-center py-4">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="content w-64 swiper-slide">
+            <div class="swiper-wrapper shadow-xl">
+              <div class="content w-64 swiper-slide border-4 border-[#f5e2c8] rounded">
                 <img src="./assets/activities/img1.jpg" class="object-cover" loading="lazy">
               </div>
               <div class="content w-64 swiper-slide">
