@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script>
       tailwind.config = {
@@ -99,26 +101,36 @@
             background-repeat: no-repeat;
             background-position: center;
           }
-          .border-cust {
-            border-radius: 0% 25% 25% 25% / 25% 25% 25% 25%;
+          .bg-foot {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1531%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1532%26quot%3b)'%3e%3c/rect%3e%3cuse xlink:href='%23SvgjsSymbol1539' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1539' x='720' y='0'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1531'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='139.29%25' x2='84.72%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1532'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(159%2c 18%2c 57%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1538'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1537'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1534'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1533'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1535'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1536'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol1539'%3e%3cuse xlink:href='%23SvgjsPath1533' x='30' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='30' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='30' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='30' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='30' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='30' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='30' y='390' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='30' y='450' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='30' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='30' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='90' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='90' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='90' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='90' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='90' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='90' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='90' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='90' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='90' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='90' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='150' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='150' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='150' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='150' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='210' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='210' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='210' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='210' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='210' y='270' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='210' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='210' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='210' y='450' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='210' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='210' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='270' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='270' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='270' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='270' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='270' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='270' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='270' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='270' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='270' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='270' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='330' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='330' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='330' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='330' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='330' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='330' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='330' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='330' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='330' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='330' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='390' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='390' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='390' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='390' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='390' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='390' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='390' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='390' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='390' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='390' y='570' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='450' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='450' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='450' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='450' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='450' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='450' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='450' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='450' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='450' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='450' y='570' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='510' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='510' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='510' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='510' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='510' y='270' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='510' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='510' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='510' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='510' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='510' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1537' x='570' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='570' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='570' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='570' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='570' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='570' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='570' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='570' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='570' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='570' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='630' y='30' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='630' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='630' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='630' y='210' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='630' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='630' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='630' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='630' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='630' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='630' y='570' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='690' y='30' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='690' y='90' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='690' y='150' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1536' x='690' y='210' stroke='%231c538e' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1534' x='690' y='270' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='690' y='330' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='690' y='390' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1533' x='690' y='450' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1538' x='690' y='510' stroke='%231c538e'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1535' x='690' y='570' stroke='%231c538e'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+            background-position: right;
+            background-repeat: no-repeat;
           }
         }
   </style>
   <body>
-    <main class="w-full h-screen">
+    <main class="w-full h-screen overflow-x-hidden">
       <section
-        class="relative flex flex-col justify-center items-center w-full h-[80vh] text-center text-white p-4"
+        class="relative flex flex-col justify-center items-center w-full h-full text-center text-white p-4"
       >
-        <div class="block z-50">
-          <h1 class="text-white text-xl font-bold font-poppins bg-img-flag">WELCOME TO!</h1>
-          <h1 class="text-white text-3xl font-bold font-poppins bg-img-flag">TECHNICAL ONE</h1>
-          <h1 class="text-white text-4xl font-bold font-poppins bg-img-flag">
+        <div 
+        class="flex flex-col justify-center items-center gap-2 z-50" 
+        data-aos="fade-up" 
+        data-aos-duration="1000">
+          <h1 class="text-white text-xl font-bold font-poppins bg-img-flag tracking-wider">WELCOME TO!</h1>
+          <h1 class="text-white text-3xl font-bold font-poppins bg-img-flag tracking-wider">TECHNICAL ONE</h1>
+          <h1 class="text-white text-4xl font-bold font-poppins bg-img-flag tracking-wider">
             OF ENGLISH CLUB
           </h1>
         </div>
-        <div class="mt-4 z-50"> 
-          <button class="flex justify-center items-center px-5 py-3 bg-[#ffffff] rounded-3xl">
-           <a href="#about" class="font-bold font-poppins text-[#bd1e1e] text-center">Go Explore!</a>
+        <div 
+        class="mt-4 z-50" 
+        data-aos="fade-up" 
+        data-aos-duration="1000"> 
+          <button
+          id="explore"
+          class="flex justify-center items-center px-5 py-3 bg-[#ffffff] rounded-3xl font-bold font-poppins text-rose-800 text-center">
+            Go Explore!
           </button>
         </div>
         <div class="stripe-pattern"></div>
@@ -133,29 +145,28 @@
         </div>
         <div class="text-white text-lg text-left text-gray-800 font-poppins font-bold">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum 
-            omnis magnam odio animi quis quidem?
+            An extracurricular club in schools focused on improving English language skills through engaging activities in speaking, writing, listening, and reading.
           </p>
         </div>
         <div class="activities py-4">
-          <div class="grid grid-cols-2 gap-5">
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              act out
+          <div class="grid grid-cols-2 gap-6">
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Act Out
             </div>
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              discussion
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Discussion
             </div>
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              learning
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Learning
             </div>
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              challanges
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Challenges
             </div>
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              movie show
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Movie show
             </div>
-            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center">
-              fun game
+            <div class="w-40 h-16 border-2 border-gray-100 rounded shadow-sm p-4 focus:outline-none focus:ring focus:ring-gray-200 text-center text-white">
+              Fun game
             </div>
           </div>
         </div>
@@ -185,28 +196,36 @@
         </div>
       </section>
 
-      <footer class="relative w-full h-64 flex flex-col justify-center items-center bg-footer-pattern bg-center bg-no-repeat">
+      <footer class="relative w-full h-fit flex flex-col justify-center items-center bg-foot">
         <!-- <div class="transition transition-t"></div> -->
-        <div class="px-5 py-5 text-white text-2xl font-poppins font-bold w-full text-left overflow-hidden">
+        <div class="px-5 pt-6 text-white text-4xl font-poppins font-bold w-full text-center">
           <h3>LET'S JOIN US!</h3>
         </div>
-        <div class="flex justify-between gap-4 w-full px-5">
-          <div id="medsos" class="flex flex-col justify-center gap-4 items-center">
+        <div class="flex justify-between items-center gap-4 w-full px-5">
+          <div id="medsos" class="flex flex-col justify-center items-center gap-4">
+            <!-- <div class="flex justify-center items-center gap-3">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90">
+                <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  <img src="./assets/stuff/gmail-icon-logo-svgrepo-com.svg" alt="">
+                </a>
+              </div>
+              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white font-bold active:text-indigo-500 active:underline text-lg">techone_ec</a>
+            </div> -->
             <div class="flex justify-center items-center gap-3">
               <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl instagram active:scale-90">
                 <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                   <i class="ph ph-instagram-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
+              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white font-bold active:text-indigo-500 active:underline text-lg">techone_ec</a>
             </div>
             <div class="flex justify-center items-center gap-3">
-              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#fffff0] active:scale-90 bg-indigo-700">
-                <a href="https://discord.gg/j2da4BqaFs">
+              <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-indigo-700 active:scale-90">
+                <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                   <i class="ph ph-discord-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="https://discord.gg/j2da4BqaFs" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
+              <a href="https://www.instagram.com/techone_ec?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white font-bold active:text-indigo-500 active:underline text-lg">techone_ec</a>
             </div>
             <div class="flex justify-center items-center gap-3">
               <div class="w-10 h-10 flex justify-center items-center p-2 rounded-full shadow-xl bg-[#000000] active:scale-90">
@@ -214,18 +233,24 @@
                   <i class="ph ph-tiktok-logo text-2xl text-white"></i>
                 </a>
               </div>
-              <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc" class="text-white font-bold active:text-indigo-500 active:underline">techone_ec</a>
+              <a href="https://www.tiktok.com/@techone_ec?is_from_webapp=1&sender_device=pc" class="text-white font-bold active:text-indigo-500 active:underline text-lg">techone_ec</a>
             </div>
           </div>
-          <div id="identity" class="flex justify-center items-center p-2 space-x-2">
+          <div id="identity" class="flex justify-center items-center py-4 space-x-2">
             <div class="w-40 h-40">
-              <img src="/assets/stuff/logo-ec.png" alt="" class="object-cover">
+              <img src="/assets/stuff/logo-ec.png" class="object-cover">
             </div>
           </div>
+        </div>
+        <div class="w-full flex justify-center items-center p-4 border-t-2 border-white">
+          <p>&copy; Created by Toec Member</p>
         </div>
       </footer>
     </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

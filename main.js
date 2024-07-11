@@ -16,3 +16,9 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction:false,
   }
 });
+
+document.getElementById('explore').addEventListener('click', function() {
+  document.getElementById('about').scrollIntoView({ 
+      behavior: 'smooth' 
+  });
+});
